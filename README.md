@@ -1,5 +1,5 @@
-# Notenrechner v.1.05
-Dieses Program dient zur Verwaltung von Noten inerhalb eines Schulsemesters.
+# Notenrechner v.1.00
+Dieses Programm dient zur Verwaltung von Noten innerhalb eines Schulsemesters.
 
 
 Funktionen:

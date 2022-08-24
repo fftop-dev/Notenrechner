@@ -119,7 +119,7 @@ public class Gui extends JFrame {
         fillSpace(topPanel, topLabel);
         fillSpace(panelBottom, bottomText);
 
-        setTitle("Notenrechner v1.05");
+        setTitle("Notenrechner v.1.00");
         setVisible(true);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setSize(900,700);
