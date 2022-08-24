@@ -1,0 +1,39 @@
+@startuml
+skinparam ClassAttributeIconSize 0
+class Fach{
+- bezeichnung:String
+- noten:Vector<Note>
+- durchschnitt:float
+c Note(bezeichnung:String, noten:Note[]):void
++ setBezeichnung(bezeichnung:String):void
++ getBezeichnung():String
++ getNote(index:int)Note
++ getDurchschnitt(index:int):float
++ addNote(note:Note):void
++ removeNote(index:int):void
+}
+class Note{
+- bezeichnung:String
+- notenwert:float
+- gewichtung:int
+c Note(bezeichnung:String, notenwert:float, gewichtung:int):void
++ getBezeichnung():String
++ getNotenwert():float
++ getGewichtung():int
++ setBezeichnung(bezeichnung:String):void
++ setNotenwert(notenwert:float):void
++ setGewichtung(gewichtung:int):void
+}
+class Notenverwaltung{
+- faecher:Vector<Fach>
+- durchschnitt:float
+c Notenverwaltung(faecher:Vector<Fach>):void
++ getFach(index:int):Fach
++ addFach(fach:Fach):void
++ removeFach(index:int):void
++ berechneDurchschnitt():void
+}
+
+Fach o-- Note
+Notenverwaltung o-- Fach
+@enduml4
